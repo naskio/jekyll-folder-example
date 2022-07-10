@@ -1,16 +1,16 @@
 # jekyll-folder-example
 
-Jekyll example where we use a folder `Docs/` for hosting the website.
+Jekyll example where we use a folder `docs/` for hosting the website.
 
 # Steps
 
 1. refactoring
     - Rename `assets` folder to `static`
-    - Put all markdown files in `Docs/content`
+    - Put all markdown files in `docs/content`
 
 2. Generate Jekyll site
    ```shell
-   cd Docs/
+   cd docs/
    jekyll new --skip-bundle .
    ```
 3. Add dependencies to Gemfile
@@ -25,3 +25,5 @@ Jekyll example where we use a folder `Docs/` for hosting the website.
    jekyll serve --config _config.yml,_config.development.yml
    ```
 7. Use Collections
+
+> Folder should be named `docs` all lowercase.
