@@ -14,11 +14,6 @@ Jekyll example where we use a folder `Docs/` for hosting the website.
    jekyll new --skip-bundle .
    ```
 3. Add dependencies to Gemfile
-   ```Gemfile
-   gem "webrick", "~> 1.7"
-   gem "jekyll-remote-theme", "~> 0.4.3"
-   gem "rake", "~> 13.0"
-   ```
 4. Install dependencies
    ```shell
    bundle install
