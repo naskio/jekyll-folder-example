@@ -5,17 +5,15 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-# This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.2"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+#   gem "jekyll-feed", "~> 0.12"
+#   gem "jekyll-remote-theme", "~> 0.4.3"
+#   gem 'jekyll-default-layout'
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-relative-links"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -32,7 +30,16 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "webrick", "~> 1.7", group: :jekyll_plugins
-gem "jekyll-remote-theme", "~> 0.4.3", group: :jekyll_plugins
-gem "rake", "~> 13.0", group: :jekyll_plugins
-gem 'jekyll-default-layout', group: :jekyll_plugins
+### dev + gh-pages emulation dependencies ###
+# This will help ensure the proper Jekyll version is running.
+# gem "jekyll", "~> 4.2.2"
+# gem "jekyll", "~> 3.9.2" # static site generator
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+# gem "minima", "~> 2.5"
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem 'github-pages', group: :jekyll_plugins # emulates github-pages environment
+gem "bundler", group: :jekyll_plugins # Gems manager (optional)
+gem "rake", group: :jekyll_plugins # build utility (optional)
+gem "webrick", '~> 1.7', group: :jekyll_plugins # HTTP server toolkit, fix for ruby >= 3.0
+### dev + gh-pages emulation dependencies ###

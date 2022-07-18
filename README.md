@@ -5,8 +5,8 @@ Jekyll example where we use a folder `docs/` for hosting the website.
 # Steps
 
 1. refactoring
-    - Rename `assets` folder to `static`
-    - Put all markdown files in `docs/content`
+    - add `assets/` folder into `docs/`
+    - Put all markdown files in `docs/_docs/`
 
 2. Generate Jekyll site
    ```shell
