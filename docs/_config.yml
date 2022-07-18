@@ -53,12 +53,11 @@ relative_links:
   enabled: true
   collections: true
 
-#plugins: # installed in Gemfile
-#  - jekyll-remote-theme
-#  - jekyll-feed
-#  - jekyll-seo-tag
-#  - jekyll-relative-links
-#  - jekyll-default-layout # not used
+plugins: # installed in Gemfile
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-relative-links
 
 # Exclude from processing.
 # The following items will not be processed, by default.
