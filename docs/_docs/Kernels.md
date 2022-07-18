@@ -1,3 +1,8 @@
+---
+category: 'Advanced'
+order: 2
+---
+
 ## General Information
 
 Kernels are `static` functions that can work on value types and can invoke other functions that work on value types.
@@ -74,7 +79,7 @@ class ...
 Kernels have to be loaded by an accelerator first before they can be executed.
 See the [ILGPU kernel sample](https://github.com/m4rs-mt/ILGPU.Samples/tree/master/Src/SimpleKernel) for details.
 There are two possibilities in general: using the high-level (described here) and
-the [low-level loading API](Inside-ILGPU.md).
+the [low-level loading API](Inside-ILGPU).
 We strongly recommend to use the high-level API that simplifies programming, is less error prone and features automatic
 kernel caching and disposal.
 
@@ -136,7 +141,7 @@ class ...
 Note that a kernel-loading operation will trigger a kernel compilation in the case of an uncached kernel.
 The compilation step will happen in the background and is transparent for the user.
 However, if you require custom control over the low-level kernel-compilation process refer
-to [Advanced Low-Level Functionality](Inside-ILGPU.md).
+to [Advanced Low-Level Functionality](Inside-ILGPU).
 
 ## Immediate Launching of Kernels
 
@@ -181,7 +186,7 @@ class ...
 
 ## Retrieving Information about Loaded Kernels
 
-You can get the underlying `CompiledKernel` instance (see [Inside ILGPU](Inside-ILGPU.md)) of a kernel launcher instance
+You can get the underlying `CompiledKernel` instance (see [Inside ILGPU](Inside-ILGPU)) of a kernel launcher instance
 via:
 
 ```c#

@@ -1,3 +1,8 @@
+---
+category: 'Advanced'
+order: 5
+---
+
 Dynamic specialization allows the definition of kernels that will be `specialized/optimized` during runtime.
 This allows you to define kernels with `constant values` that are not known at compile time of the kernel or
 application.

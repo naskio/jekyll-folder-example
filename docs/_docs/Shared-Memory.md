@@ -1,3 +1,8 @@
+---
+category: 'Advanced'
+order: 3
+---
+
 ILGPU support both `static` and `dynamic` shared memory.
 Static shared memory is limited to `statically known` allocations which have a known size at compile time of the kernel.
 The latest ILGPU versions allow the use of dynamic shared memory, which can be specified for each kernel launch

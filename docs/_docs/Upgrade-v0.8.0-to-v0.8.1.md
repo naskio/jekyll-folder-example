@@ -1,3 +1,8 @@
+---
+category: 'Upgrade Guides'
+title: 'v0.8.0 to v0.8.1'
+---
+
 ## General Notes
 
 All implicitly grouped kernel launchers have been updated with additional overloads.

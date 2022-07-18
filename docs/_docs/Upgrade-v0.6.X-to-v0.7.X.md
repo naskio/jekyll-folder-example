@@ -1,3 +1,8 @@
+---
+category: 'Upgrade Guides'
+title: 'v0.6.X to v0.7.X'
+---
+
 ## General Notes
 
 A new OpenCL backend has been added that supports OpenCL C 2.0 (or higher) compatible GPUs.

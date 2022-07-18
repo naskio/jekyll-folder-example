@@ -1,3 +1,8 @@
+---
+category: 'Upgrade Guides'
+title: 'v0.3.X to v0.5.X'
+---
+
 ## ArrayViews and VariableViews
 
 The `ArrayView` and `VariableView` structures have been adapted to the C# 'ref' features.

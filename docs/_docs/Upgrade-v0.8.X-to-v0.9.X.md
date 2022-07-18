@@ -1,3 +1,8 @@
+---
+category: 'Upgrade Guides'
+title: 'v0.8.X to v0.9.X'
+---
+
 ## General
 
 In order to support 64-bit memory buffers and array views, we have introduced the `LongIndexX` types that represent (

@@ -1,3 +1,9 @@
+---
+category: 'Advanced'
+order: 7
+title: 'Inside ILGPU'
+---
+
 ## Optimizations and Compile Time
 
 ILGPU features a modern parallel processing, transformation and compilation model.

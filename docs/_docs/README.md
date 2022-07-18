@@ -1,3 +1,7 @@
+---
+permalink: /docs/
+---
+
 # ILGPU Tutorials
 
 ## Primers (How a GPU works)
@@ -5,12 +9,12 @@
 This series introduces how a GPU works and what ILGPU does. If you have programmed with CUDA or OpenCL
 before you can probably skip 01 and 02.
 
-00 [Setting up ILGPU](Primer_00.md) (ILGPU version 1.0.0)
+00 [Setting up ILGPU](Primer-00.md) (ILGPU version 1.0.0)
 
-01 [A GPU is not a CPU](Primer_01.md) (ILGPU version 1.0.0)
+01 [A GPU is not a CPU](Primer-01.md) (ILGPU version 1.0.0)
 > This page will provide a quick rundown the basics of how kernels (think GPU programs) run.
 
-02 [Memory and bandwidth and threads. Oh my!](Primer_02.md)
+02 [Memory and bandwidth and threads. Oh my!](Primer-02.md)
 > This will hopefully give you a better understanding of how memory works in hardware and the performance
 > implications.
 
@@ -21,7 +25,7 @@ of how Cuda or OpenCL work.
 If you need a primer look to something like [this for Cuda](https://developer.nvidia.com/about-cuda)
 or [this for OpenCL](https://www.khronos.org/opencl/)
 
-01 [Context and Accelerators](Tutorial_01.md)
+01 [Context and Accelerators](Tutorial-01.md)
 > This tutorial covers creating the Context and Accelerator objects which setup ILGPU for use.
 > It's mostly boiler plate and does no computation but it does print info about your GPU if you have one.
 > There is some advice about ILGPU in here that makes it worth the quick read.
@@ -30,14 +34,14 @@ or [this for OpenCL](https://www.khronos.org/opencl/)
 >
 > [Device Info Sample](https://github.com/m4rs-mt/ILGPU/tree/master/Samples/DeviceInfo)
 
-02 [MemoryBuffers and ArrayViews](Tutorial_02.md)
+02 [MemoryBuffers and ArrayViews](Tutorial-02.md)
 > This tutorial covers the basics for Host / Device memory management.
 >
 > See Also:
 >
 > [Simple Allocation Sample](https://github.com/m4rs-mt/ILGPU/tree/master/Samples/SimpleAlloc)
 
-03 [Kernels and Simple Programs](Tutorial_03.md)
+03 [Kernels and Simple Programs](Tutorial-03.md)
 > This is where it all comes together. This covers actual code, on the actual GPU (or the CPU if you are testing / dont
 > have a GPU).
 >
@@ -48,7 +52,7 @@ or [this for OpenCL](https://www.khronos.org/opencl/)
 > [Simple Math Sample](https://github.com/m4rs-mt/ILGPU/tree/master/Samples/SimpleMath)
 
 
-04 [Structs and the N-body problem](Tutorial_04.md)
+04 [Structs and the N-body problem](Tutorial-04.md)
 > This tutorial actually does something! We use computing the N-body problem as a sample of how to better manage Host /
 > Device memory.
 

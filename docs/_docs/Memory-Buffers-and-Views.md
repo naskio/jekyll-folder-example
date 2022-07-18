@@ -1,3 +1,9 @@
+---
+category: 'Advanced'
+order: 1
+title:  "Memory Buffers & Views"
+---
+
 ## Memory Buffers
 
 `MemoryBuffer` represent allocated memory regions (allocated arrays) of a given value type on specific accelerators.

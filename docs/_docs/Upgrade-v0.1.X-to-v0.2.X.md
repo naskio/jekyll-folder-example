@@ -1,3 +1,8 @@
+---
+category: 'Upgrade Guides'
+title: 'v0.1.X to v0.2.X'
+---
+
 ## General Upgrade
 
 If you rely on the `LightningContext` class (of `ILGPU.Lightning` v0.1.X) for high-level kernel loading or other

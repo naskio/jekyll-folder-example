@@ -1,3 +1,9 @@
+---
+category: 'Advanced'
+order: 6
+title:  "Debugging & Profiling"
+---
+
 The best debugging experience can be achieved with the `CPUAccelerator`.
 Debugging with the software emulation layer is very convenient due to the very good properties of the .Net debugging
 environments.

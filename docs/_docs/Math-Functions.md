@@ -1,3 +1,8 @@
+---
+category: 'Advanced'
+order: 4
+---
+
 The default math functions in .Net are realized with static methods from the `Math` class.
 However, many operations work on doubles by default (like `Math.Sin`) and there is often no float overload.
 This causes many floating-point operations to be performed on 64-bit floats, even when this precision is not required.
