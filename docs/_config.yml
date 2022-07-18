@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-url: "https://naskio.github.io"
-baseurl: "/jekyll-folder-example"
+url: "https://ilgpu.nask.io"
+baseurl: ""
 title: ILGPU - A Modern GPU Compiler for .Net Programs
 email: ilgpucompiler@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
