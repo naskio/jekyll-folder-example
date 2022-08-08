@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 6
 title:  "Debugging & Profiling"
 ---
 

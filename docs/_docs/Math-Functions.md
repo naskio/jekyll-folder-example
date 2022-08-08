@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 4
 ---
 
 The default math functions in .Net are realized with static methods from the `Math` class.

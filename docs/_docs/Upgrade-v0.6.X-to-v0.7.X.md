@@ -1,5 +1,4 @@
 ---
-category: 'Upgrade Guides'
 title: 'v0.6.X to v0.7.X'
 ---
 

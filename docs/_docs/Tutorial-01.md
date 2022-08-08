@@ -1,5 +1,4 @@
 ---
-category: 'Beginner'
 title: 'Context & Accelerators'
 slug: 'context-and-accelerators'
 ---

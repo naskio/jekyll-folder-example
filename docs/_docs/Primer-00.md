@@ -1,5 +1,4 @@
 ---
-category: 'Primers'
 title:  "Setting Up ILGPU"
 slug: 'setting-up-ilgpu'
 ---

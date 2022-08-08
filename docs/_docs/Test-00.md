@@ -1,9 +1,9 @@
 ---
-title:  "Structs"
-slug: 'structs'
+title:  "Test 00"
+slug: 'test-00'
 ---
 
-# Structs
+# Test 00
 
 As we saw in the [memory tutorial](Tutorial-02.md) programs need data.
 However a problem arises when we use ILGPU because it restricts how you can store, move, allocate, and access data.

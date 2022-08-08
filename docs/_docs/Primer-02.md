@@ -1,5 +1,4 @@
 ---
-category: 'Primers'
 title:  "Memory & Bandwidth Threads"
 slug: 'memory-and-bandwidth-threads'
 ---

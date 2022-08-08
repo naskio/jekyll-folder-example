@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 2
 ---
 
 ## General Information

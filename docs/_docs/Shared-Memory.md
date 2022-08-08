@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 3
 ---
 
 ILGPU support both `static` and `dynamic` shared memory.

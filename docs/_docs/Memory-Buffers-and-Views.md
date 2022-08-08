@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 1
 title:  "Memory Buffers & Views"
 ---
 

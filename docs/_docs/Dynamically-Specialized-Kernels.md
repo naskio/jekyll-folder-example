@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 5
 ---
 
 Dynamic specialization allows the definition of kernels that will be `specialized/optimized` during runtime.

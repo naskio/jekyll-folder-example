@@ -1,5 +1,4 @@
 ---
-category: 'Primers'
 title:  "A GPU Is Not A CPU"
 slug: "a-gpu-is-not-a-cpu"
 ---

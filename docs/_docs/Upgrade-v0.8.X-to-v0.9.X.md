@@ -1,5 +1,4 @@
 ---
-category: 'Upgrade Guides'
 title: 'v0.8.X to v0.9.X'
 ---
 

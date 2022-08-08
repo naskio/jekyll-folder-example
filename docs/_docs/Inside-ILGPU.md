@@ -1,6 +1,4 @@
 ---
-category: 'Advanced'
-order: 7
 title: 'Inside ILGPU'
 ---
 

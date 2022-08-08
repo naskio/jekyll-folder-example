@@ -1,5 +1,4 @@
 ---
-category: 'Beginner'
 title:  "Kernels and Simple Programs"
 slug: 'kernels-and-simple-programs'
 ---

@@ -1,5 +1,4 @@
 ---
-category: 'Beginner'
 title:  "MemoryBuffers and ArrayViews"
 slug: 'memorybuffers-and-arrayviews'
 ---
