@@ -27,3 +27,11 @@ Jekyll example where we use a folder `docs/` for hosting the website.
 7. Use Collections
 
 > Folder should be named `docs` all lowercase.
+
+## Data Generation
+
+```shell
+brew install yq
+curl https://api.github.com/repos/m4rs-mt/ILGPU/releases | yq -P > Desktop/jekyll-folder-example/docs/_data/releases.yml
+curl https://api.github.com/repos/m4rs-mt/ILGPU/milestones | yq -P > Desktop/jekyll-folder-example/docs/_data/milestones.yml
+```
