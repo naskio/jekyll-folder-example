@@ -1,0 +1,17 @@
+---
+layout: page
+title: Releases
+---
+
+<div>
+    <ul>
+        {% for release in site.data.releases %}
+            <li>
+                <a href="{{ release.html_url }}">
+                    <h2>{{ release.name }}</h2>
+                </a>
+                <p>{{ release.body | markdownify }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
