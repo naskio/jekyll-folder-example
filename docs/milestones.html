@@ -1,0 +1,16 @@
+---
+layout: page
+title: Milestones
+---
+
+<div>
+    <ul>
+        {% for milestone in site.data.milestones %}
+            <li>
+                <a href="{{ milestone.html_url }}">
+                    {{ milestone.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
