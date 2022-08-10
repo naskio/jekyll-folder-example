@@ -83,7 +83,7 @@ All device side memory management happens in the host code through the MemoryBuf
 The sample goes over the basics of managing memory via MemoryBuffers. There will be far more
 in depth memory management in the later tutorials.
 
-```C#
+```c#
 using System;
 
 using ILGPU;
