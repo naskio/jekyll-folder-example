@@ -1,5 +1,6 @@
 ---
 layout: home
+extras-js: index/extras-js.html
 ---
 
 {%- assign social = site.social_links -%}
@@ -18,7 +19,7 @@ layout: home
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="{{ "/assets/img/hero-img.png" | relative_url }}" class="img-fluid animated"
+                <img src="{{ "assets/img/hero-section.png" | relative_url }}" class="img-fluid animated"
                      alt="graphics cpu">
             </div>
         </div>
@@ -29,11 +30,11 @@ layout: home
     <!-- ======= Why Us Section ======= -->
     <section id="learn-more" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
-            <div class="row" style="min-height: 553.55px !important;">
+            <div class="row" style="min-height: 554px !important;">
                 <div class="col-lg-6 d-flex flex-column align-items-center order-2 order-lg-1 img" data-aos="zoom-in"
                      data-aos-delay="150">
                     <div class="image-holder">
-                        <img src="{{ "/assets/img/why-us.png" | relative_url }}" class="" alt="graphics cpu">
+                        <img src="{{ "assets/img/learn-more.png" | relative_url }}" alt="graphics cpu">
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch order-1 order-lg-2">
@@ -499,26 +500,7 @@ layout: home
         </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= News Section ======= -->
-    <section id="news" class="pricing">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <h2>News</h2>
-                <p>Updates and news related to ILGPU and the community.</p>
-            </div>
-            <div class="row">
-                {% for post in site.posts limit: 3 %}
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="box">
-                            <h5>{{ post.title }}</h5>
-                            <p class="excerpt">{{ post.excerpt | strip_html }}</p>
-                            <a href="{{ post.url | relative_url }}" class="buy-btn">Full Article</a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section><!-- End Pricing Section -->
+    {% include latest-news.html title="More News" subtitle="Updates and news related to ILGPU and the community." %}
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
