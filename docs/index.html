@@ -4,6 +4,10 @@ extras-js: index/extras-js.html
 ---
 
 {%- assign social = site.social_links -%}
+{% assign its = site.docs | where: "path", site.data.sidebar.main.path %}
+{% for it in its %}
+    {% assign docs_url = it.url | relative_url %}
+{% endfor %}
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
@@ -27,7 +31,7 @@ extras-js: index/extras-js.html
 </section><!-- End Hero -->
 
 <main id="main">
-    <!-- ======= Why Us Section ======= -->
+    <!-- ======= Learn More Section ======= -->
     <section id="learn-more" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
             <div class="row" style="min-height: 554px !important;">
@@ -48,7 +52,7 @@ extras-js: index/extras-js.html
                         <ul>
                             <li>
                                 <a data-bs-toggle="collapse" class="collapse"
-                                   data-bs-target="#accordion-list-1"><span>•</span> What is ILGPU?<i
+                                   data-bs-target="#accordion-list-1"><span>•</span>What is ILGPU?<i
                                             class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
@@ -61,8 +65,8 @@ extras-js: index/extras-js.html
                                 </div>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>•</span>
-                                    What does ILGPU do? <i class="bx bx-chevron-down icon-show"></i><i
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>•</span>What
+                                    does ILGPU do?<i class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                                     <p>
@@ -75,16 +79,18 @@ extras-js: index/extras-js.html
                                 </div>
                             </li>
                             <li>
-                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>•</span>
-                                    Do I need to pay for ILGPU? <i class="bx bx-chevron-down icon-show"></i><i
+                                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>•</span>Do
+                                    I need to pay for ILGPU?<i class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                 <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                                     <p>
                                         Nope! ILGPU is released under the University of Illinois/NCSA Open Source
-                                        License. It's a free and non-sponsored project being developed by a professional
-                                        and passionate compiler, GPU and computer graphics developer. Support the
-                                        project with contributions or a small donation in order to speed up the
-                                        development process and to keep the project alive.
+                                        License. It is a free project and open-source project supported mainly by
+                                        <a href="https://www.gresearch.co.uk/"
+                                           style="display: inline; padding-right: unset; font-weight: 400; font-size: 1rem;"
+                                           target="_blank">G-Research</a>. Support the project with contributions or a
+                                        small donation in order
+                                        to speed up the development process and to keep the project alive.
                                     </p>
                                 </div>
                             </li>
@@ -93,9 +99,9 @@ extras-js: index/extras-js.html
                 </div>
             </div>
         </div>
-    </section><!-- End Why Us Section -->
+    </section><!-- End Learn More Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Highlights Section ======= -->
     <section id="highlights" class="services">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
@@ -203,7 +209,7 @@ extras-js: index/extras-js.html
                 </div>
             </div>
         </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Highlights Section -->
 
     <!-- ======= Features Comparison Section ======= -->
     <section id="features" class="section-bg">
@@ -473,8 +479,7 @@ extras-js: index/extras-js.html
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Features Section -->
+    </section><!-- End Features Comparison Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -488,13 +493,11 @@ extras-js: index/extras-js.html
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <a class="cta-btn cta-btn-1"
-                       href="{% capture url %}{% link _docs/README.md %}{% endcapture %}{{ url | relative_url }}">
-                        Documentation</a>
+                    <a class="cta-btn cta-btn-1" href="{{ docs_url }}">Documentation</a>
                     <a class="cta-btn" href="{{ social.github | default: '#' }}/" target="_blank"><i
-                                class="bx bxl-github"></i> Github </a>
+                                class="bx bxl-github"></i>Github</a>
                     <a class="cta-btn" href="{{ social.discord | default: '#' }}" target="_blank"><i
-                                class="bx bxl-discord"></i> Discord </a>
+                                class="bx bxl-discord"></i>Discord</a>
                 </div>
             </div>
         </div>
