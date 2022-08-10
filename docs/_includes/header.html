@@ -10,7 +10,8 @@
 {% capture url %}{% link releases.html %}{% endcapture %}
 {% assign releases_url = url | relative_url %}
 
-<header id="header" class="fixed-top {% if page_url != index_url %}header-inner-pages{% endif %}">
+{% comment %}<header id="header" class="fixed-top {% if page_url != index_url %}header-inner-pages{% endif %}">{% endcomment %}
+<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
         <a href="{{ index_url }}" class="logo me-auto"></a>
@@ -21,11 +22,11 @@
                     <a href="#" class="{% if page_url == index_url %}active{% endif %}"><span>About</span> <i
                                 class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="{{ '#learn-more' | relative_url }}">Learn More</a></li>
-                        <li><a href="{{ '#highlights' | relative_url }}">Highlights</a></li>
-                        <li><a href="{{ '#features' | relative_url }}">Features</a></li>
-                        <li><a href="{{ '#news' | relative_url }}">News</a></li>
-                        <li><a href="{{ '#faq' | relative_url }}">FAQ</a></li>
+                        <li><a href="{{ '#learn-more' | relative_url }}" class="scrollto">Learn More</a></li>
+                        <li><a href="{{ '#highlights' | relative_url }}" class="scrollto">Highlights</a></li>
+                        <li><a href="{{ '#features' | relative_url }}" class="scrollto">Features</a></li>
+                        <li><a href="{{ '#news' | relative_url }}" class="scrollto">News</a></li>
+                        <li><a href="{{ '#faq' | relative_url }}" class="scrollto">FAQ</a></li>
                     </ul>
                 </li>
 
