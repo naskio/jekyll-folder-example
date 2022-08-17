@@ -12,3 +12,13 @@
     <script defer src="{{ "assets/js/search.js" | relative_url }}"></script>
 {% endif %}
 <!-- Search Feature -->
+
+<!-- Code Highlighting -->
+<script defer src="{{ "assets/vendor/highlight/highlight.min.js" | relative_url }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        hljs.highlightAll();
+    })
+</script>
+<script defer src="{{ "assets/vendor/prism/prism.js" | relative_url }}"></script>
+<!-- Code Highlighting -->
