@@ -7,6 +7,12 @@
         {% endfor %}
     </div>
 
+    {% if site.search.enabled %}
+        <div id="search" class="ms-4 mb-4">
+            <input type="search" class="typeahead form-control" placeholder="Search..." aria-label="Search" />
+        </div>
+    {% endif %}
+
     <nav id="wiki-nav">
         {% assign sections = site.data.sidebar.sections %}
         {% for section in sections %}

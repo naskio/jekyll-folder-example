@@ -1,4 +1,5 @@
 <!-- Extras CSS -->
+<link rel="stylesheet" href="{% capture url %}{% link assets/css/doc.scss %}{% endcapture %}{{ url | relative_url }}">
 {% if site.dark_mode.enabled %}
     <link rel="stylesheet"
           href="{% capture url %}{% link assets/css/theme-switcher.scss %}{% endcapture %}{{ url | relative_url }}">

@@ -83,3 +83,6 @@ plugins: # installed in Gemfile
 
 dark_mode:
   enabled: false # TODO: enable dark mode
+
+search:
+  enabled: true
