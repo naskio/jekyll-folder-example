@@ -39,11 +39,11 @@
   color: #fff !important;
 }
 
-.mobile-nav-toggle{
+.mobile-nav-toggle {
   color: #0aaeb3 !important;
 }
 
-.navbar .active{
+.navbar .active {
   font-weight: bold;
 }
 
@@ -242,8 +242,8 @@
   left: 0;
   width: 300px;
   overflow-x: hidden;
-  overflow-y: hidden;
-  height: 100%;
+  overflow-y: scroll;
+  height: calc(100vh - 100px);
   background: #002C5A;
   z-index: 200;
   padding: 0;
